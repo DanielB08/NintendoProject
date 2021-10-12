@@ -25,20 +25,15 @@ public class Jeu {
 	}
 
 
-<<<<<<< Updated upstream
 	public List<Console> getConsole() {
-=======
-	public Console getConsole() {
->>>>>>> Stashed changes
+
 		return console;
 	}
 
 
-<<<<<<< Updated upstream
+
 	public void setConsole(List<Console> console) {
-=======
-	public void setConsole(Console console) {
->>>>>>> Stashed changes
+
 		this.console = console;
 	}
 
