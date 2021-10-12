@@ -5,6 +5,7 @@ import java.util.List;
 
 import metier.Adresse;
 import metier.Boutique;
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -17,6 +18,10 @@ public class Test {
 		Console c1 = new Console("Nintendo Gamecube");
 		Console c2 = new Console("PlayStation4");
 		Console c3 = new Console("Xbox one");
+		Console playstation = new Console ("Playstation");
+		Console gameboy = new Console ("gameboy");
+		Console xbox = new Console ("xbox");
+		Console wii = new Console ("wii");
 
 		Consoles.add(c1);
 		Consoles.add(c2);
@@ -36,6 +41,14 @@ public class Test {
 		Boutique boutique = new Boutique("Micromania", adresse,jeux);
 
 
+		Jeu j = new Jeu("Pokemon",Consoles);
+		Jeu j4 = new Jeu("Mario",Consoles);
+		Jeu j5 = new Jeu("Zelda",Consoles);
 
+
+
+		Client c = new Client ("Vince","Dve","Pokemon");
 	}
+
+
 }
