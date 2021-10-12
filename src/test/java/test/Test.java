@@ -1,8 +1,10 @@
 package test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import metier.Achat;
 import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
@@ -46,9 +48,12 @@ public class Test {
 		Jeu j4 = new Jeu("Mario",Consoles);
 		Jeu j5 = new Jeu("Zelda",Consoles);
 
+		List <Achat> listeAchat = new ArrayList();
+		
+		Achat a1 = new Achat(j1, LocalDate.now(),50,boutique);
+		listeAchat.add(a1);
 
-
-		Client c = new Client ("Vince","Dve","Pokemon");
+		Client c = new Client ("Vince","Dve",listeAchat);
 	}
 
 
