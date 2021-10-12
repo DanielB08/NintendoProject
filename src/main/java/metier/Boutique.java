@@ -7,12 +7,14 @@ public class Boutique {
 	private String nom;
 	private Adresse adresseBoutique;
 	private List <Jeu> stockJeux;
+	
 	public Boutique(String nom, Adresse adresseBoutique, List<Jeu> stockJeux) {
 		super();
 		this.nom = nom;
 		this.adresseBoutique = adresseBoutique;
 		this.stockJeux = stockJeux;
 	}
+	
 	public String getNom() {
 		return nom;
 	}
