@@ -5,15 +5,14 @@ import java.util.List;
 public class Jeu {
 
 	private String titre;
-	private Console console;
+	private List <Console> console;
 	
 	
-	
-	public Jeu(String titre, Console console) {
+	public Jeu(String titre, List<Console> console) {
+		super();
 		this.titre = titre;
 		this.console = console;
 	}
-
 
 
 	public String getTitre() {
@@ -21,29 +20,24 @@ public class Jeu {
 	}
 
 
-
 	public void setTitre(String titre) {
 		this.titre = titre;
 	}
 
 
-
-	public Console getConsole() {
+	public List<Console> getConsole() {
 		return console;
 	}
 
 
-
-	public void setConsole(Console console) {
+	public void setConsole(List<Console> console) {
 		this.console = console;
 	}
-
 
 
 	@Override
 	public String toString() {
 		return "Jeu [titre=" + titre + ", console=" + console + "]";
 	}
-	
 	
 }
